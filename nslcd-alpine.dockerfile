@@ -4,4 +4,4 @@ RUN apk add --no-cache \
       ca-certificates \
       && install -d -m 0755 -o nobody -g nobody /var/run/nslcd
 USER 65534:65534
-ENTRYPOINT ["/usr/sbin/nslcd", "-n"]
+ENTRYPOINT ["/usr/sbin/nslcd", "-d"]
